@@ -87,7 +87,7 @@
             </objects>
             <point key="canvasLocation" x="-2586" y="67"/>
         </scene>
-        <!--Drink Details-->
+        <!--Add Menu Item-->
         <scene sceneID="EGa-cn-OJY">
             <objects>
                 <viewController storyboardIdentifier="ChoreVC" id="4GJ-43-TPx" customClass="ChoreViewController" customModule="QuickRestaurantApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -145,17 +145,33 @@
                                     <action selector="completechore:" destination="4GJ-43-TPx" eventType="touchUpInside" id="Akq-Ot-xpf"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KW5-VT-nh8">
+                                <rect key="frame" x="146" y="137" width="59" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ykD-vp-1Y0">
+                                <rect key="frame" x="183" y="192" width="54" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="hTh-5c-HcB" firstAttribute="top" secondItem="8PU-ca-IMt" secondAttribute="bottom" constant="32" id="0HC-Kf-1vR"/>
+                            <constraint firstItem="ykD-vp-1Y0" firstAttribute="leading" secondItem="JdO-YX-rBI" secondAttribute="leadingMargin" constant="167" id="1tZ-LA-erX"/>
                             <constraint firstItem="zjF-Uj-1wI" firstAttribute="centerX" secondItem="JdO-YX-rBI" secondAttribute="centerX" id="28t-A0-Bev"/>
+                            <constraint firstItem="KW5-VT-nh8" firstAttribute="top" secondItem="A8s-vX-kGS" secondAttribute="bottom" constant="73" id="3x5-0x-tqG"/>
                             <constraint firstItem="zjF-Uj-1wI" firstAttribute="top" secondItem="yQV-9Z-oUt" secondAttribute="bottom" constant="8" id="8tS-Jb-eA4"/>
                             <constraint firstItem="yQV-9Z-oUt" firstAttribute="centerX" secondItem="JdO-YX-rBI" secondAttribute="centerX" id="BUn-s1-Drx"/>
                             <constraint firstItem="Rwt-xp-l4r" firstAttribute="top" secondItem="zjF-Uj-1wI" secondAttribute="bottom" constant="8" id="Oud-Dd-si6"/>
                             <constraint firstItem="8PU-ca-IMt" firstAttribute="top" secondItem="Rwt-xp-l4r" secondAttribute="bottom" constant="8" id="XYQ-Fx-tH3"/>
+                            <constraint firstItem="KW5-VT-nh8" firstAttribute="leading" secondItem="JdO-YX-rBI" secondAttribute="leadingMargin" constant="165" id="amE-z3-PvE"/>
                             <constraint firstItem="8PU-ca-IMt" firstAttribute="leading" secondItem="JdO-YX-rBI" secondAttribute="leadingMargin" constant="8" id="b81-l8-sq0"/>
                             <constraint firstItem="yQV-9Z-oUt" firstAttribute="top" secondItem="A8s-vX-kGS" secondAttribute="bottom" constant="8" id="dpI-uz-HJL"/>
+                            <constraint firstItem="ykD-vp-1Y0" firstAttribute="top" secondItem="A8s-vX-kGS" secondAttribute="bottom" constant="128" id="ep5-Fe-ulT"/>
                             <constraint firstAttribute="trailingMargin" secondItem="8PU-ca-IMt" secondAttribute="trailing" constant="8" id="fIM-As-wA8"/>
                             <constraint firstItem="Rwt-xp-l4r" firstAttribute="leading" secondItem="JdO-YX-rBI" secondAttribute="leadingMargin" constant="8" id="g9O-xM-N0h"/>
                             <constraint firstAttribute="trailingMargin" secondItem="hTh-5c-HcB" secondAttribute="trailing" constant="8" id="gm4-Ke-SM0"/>
@@ -163,17 +179,19 @@
                             <constraint firstItem="hTh-5c-HcB" firstAttribute="leading" secondItem="JdO-YX-rBI" secondAttribute="leadingMargin" constant="8" id="xGx-xu-RBG"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Drink Details" id="Lmm-Cn-jBD"/>
+                    <navigationItem key="navigationItem" title="Add Menu Item" id="Lmm-Cn-jBD"/>
                     <connections>
                         <outlet property="Drink" destination="yQV-9Z-oUt" id="IqZ-3l-wU8"/>
                         <outlet property="descriptionlabel" destination="8PU-ca-IMt" id="dtw-5c-EwX"/>
+                        <outlet property="nameField" destination="KW5-VT-nh8" id="hud-WX-VfZ"/>
                         <outlet property="nameLabel" destination="yQV-9Z-oUt" id="yvK-Yd-3nX"/>
+                        <outlet property="priceField" destination="ykD-vp-1Y0" id="asZ-ll-pjT"/>
                         <outlet property="priceLabel" destination="zjF-Uj-1wI" id="For-ns-B6O"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Px-5g-hYi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2434" y="-322"/>
+            <point key="canvasLocation" x="2433.75" y="-322.18309859154931"/>
         </scene>
         <!--Drinks-->
         <scene sceneID="FOy-oG-6b7">
@@ -282,7 +300,7 @@
             </objects>
             <point key="canvasLocation" x="846" y="405"/>
         </scene>
-        <!--Drinks-->
+        <!--My Drinks Menu-->
         <scene sceneID="Tfh-7d-Y4c">
             <objects>
                 <tableViewController storyboardIdentifier="ToDoVC" id="kJ7-iV-4NV" customClass="ToDoViewController" customModule="QuickRestaurantApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -318,7 +336,6 @@
                                     <outlet property="cell" destination="aHi-mD-r3t" id="gOH-fR-nIi"/>
                                     <outlet property="nameLabel" destination="GBx-oM-Xew" id="AIM-SJ-6Oe"/>
                                     <outlet property="priceLabel" destination="QFq-KL-J4H" id="P3g-a7-UAS"/>
-                                    <segue destination="4GJ-43-TPx" kind="show" identifier="test" id="Sp4-kj-cUT"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -328,8 +345,12 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Drinks" id="x09-tg-ReV"/>
-                    <navigationItem key="navigationItem" title="Drinks" id="rFW-4h-OBF">
-                        <barButtonItem key="rightBarButtonItem" title="Add" id="erg-iK-AE1"/>
+                    <navigationItem key="navigationItem" title="My Drinks Menu" id="rFW-4h-OBF">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="erg-iK-AE1">
+                            <connections>
+                                <segue destination="4GJ-43-TPx" kind="show" id="wBp-S2-A1q"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="ToDoTableView" destination="yje-Px-yfL" id="5rq-b1-EfE"/>

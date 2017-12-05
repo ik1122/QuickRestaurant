@@ -110,15 +110,15 @@ class ToDoViewController: UIViewController, UITableViewDataSource, UITableViewDe
     //
     //        return cell!
     //    }
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let item: Chore = feedItems[indexPath.row] as! Chore
-        print(item.name ?? "e")
-        print(item.price ?? "f")
-        name1 = item.name ?? "e"
-        price1 = item.price ?? "f"
-        performSegue(withIdentifier: "test", sender: self)
-        
-    }
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        let item: Chore = feedItems[indexPath.row] as! Chore
+//        print(item.name ?? "e")
+//        print(item.price ?? "f")
+//        name1 = item.name ?? "e"
+//        price1 = item.price ?? "f"
+//        performSegue(withIdentifier: "test", sender: self)
+//        
+//    }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         

@@ -56,6 +56,17 @@ class GroupViewController: UIViewController, UITableViewDataSource, UITableViewD
         
         return cell!
     }
+    //    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    //        let item: Chore = feedItems[indexPath.row] as! Chore
+    //        print(item.name ?? "e")
+    //        print(item.price ?? "f")
+    //        name1 = item.name ?? "e"
+    //        price1 = item.price ?? "f"
+    //        performSegue(withIdentifier: "test", sender: self)
+    //        
+    //    }
+    
+
     //    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     //        let cell = tableView.dequeueReusableCell(withIdentifier: "ToDoTableViewCell", for: indexPath) as? ToDoTableViewCell
     //

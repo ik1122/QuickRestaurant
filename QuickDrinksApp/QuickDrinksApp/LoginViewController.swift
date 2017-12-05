@@ -12,13 +12,13 @@ class LoginViewController: UIViewController {
 
     @IBAction func moveToToDo(_ sender: AnyObject) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        //let TabBarVC = storyboard.instantiateViewController(withIdentifier: "TabBarController") as! UITabBarController
-        let NavBarVC = storyboard.instantiateViewController(withIdentifier: "NavBarController") as! UINavigationController
+        let TabBarVC = storyboard.instantiateViewController(withIdentifier: "TabBarController") as! UITabBarController
+        //let NavBarVC = storyboard.instantiateViewController(withIdentifier: "NavBarController") as! UINavigationController
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
 
         
-        //appDelegate.window?.rootViewController = TabBarVC
-        appDelegate.window?.rootViewController = NavBarVC
+        appDelegate.window?.rootViewController = TabBarVC
+        //appDelegate.window?.rootViewController = NavBarVC
         
     }
     override func viewDidLoad() {
