@@ -44,7 +44,11 @@ class GroupViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
+       // tableView.reloadData()
+       // tableView.selectRow(at: indexPath, animated: false, scrollPosition: .none)
+        //DispatchQueue.main.async {
+          //  self.GroupTableView.reloadData()
+        //}
         // Retrieve cell
         // let cellIdentifier: String = "ToDoTableViewCell"
         let cell = tableView.dequeueReusableCell(withIdentifier: "GroupTableViewCell", for: indexPath) as? GroupTableViewCell
@@ -68,7 +72,8 @@ class GroupViewController: UIViewController, UITableViewDataSource, UITableViewD
             
             // the POST string has entries separated by &
             
-            let dataString = "&drink=\(item.name)&status=Ready"
+            let dataString = "&drink=\(item.name!)&status=Ready"
+            print(item.name!)
            
             //let dataString = "\(self.Drink.text!)"
             print(dataString)
@@ -113,6 +118,8 @@ class GroupViewController: UIViewController, UITableViewDataSource, UITableViewD
                                         let alert = UIAlertController(title: "Upload OK?", message: "Looks like the upload and insert into the database worked.", preferredStyle: .alert)
                                         alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
                                         self.present(alert, animated: true, completion: nil)
+                                        self.GroupTableView.reloadData()
+                                        tableView.reloadData()
                                 }
                             }
                             else
@@ -125,6 +132,8 @@ class GroupViewController: UIViewController, UITableViewDataSource, UITableViewD
                                         let alert = UIAlertController(title: "Upload Didn't Work", message: "Looks like the insert into the database did not worked.", preferredStyle: .alert)
                                         alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
                                         self.present(alert, animated: true, completion: nil)
+                                        self.GroupTableView.reloadData()
+                                        tableView.reloadData()
                                 }
                             }
                         }
@@ -132,6 +141,13 @@ class GroupViewController: UIViewController, UITableViewDataSource, UITableViewD
                 }
                 uploadJob.resume()
             }
+//        tableView.reloadData()
+//             tableView.selectRow(at: indexPath, animated: false, scrollPosition: .none)
+//            DispatchQueue.main.async {
+//                self.GroupTableView.reloadData()
+           // }
+            
+            //tableView.itemsDownloaded(feedItems)
 
         }
     
@@ -145,6 +161,4 @@ class GroupViewController: UIViewController, UITableViewDataSource, UITableViewD
     //
     //        return cell!
     //    }
-
-    
 }
