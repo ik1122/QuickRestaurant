@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "339F54571FAE8CB000346119"
-               BuildableName = "QuickDrinksApp.app"
-               BlueprintName = "QuickDrinksApp"
-               ReferencedContainer = "container:QuickDrinksApp.xcodeproj">
+               BuildableName = "QuickRestaurantApp.app"
+               BlueprintName = "QuickRestaurantApp"
+               ReferencedContainer = "container:QuickRestaurantApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "339F546D1FAE8CB100346119"
-               BuildableName = "QuickDrinksAppTests.xctest"
-               BlueprintName = "QuickDrinksAppTests"
-               ReferencedContainer = "container:QuickDrinksApp.xcodeproj">
+               BuildableName = "QuickRestaurantAppTests.xctest"
+               BlueprintName = "QuickRestaurantAppTests"
+               ReferencedContainer = "container:QuickRestaurantApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "339F54781FAE8CB100346119"
-               BuildableName = "QuickDrinksAppUITests.xctest"
-               BlueprintName = "QuickDrinksAppUITests"
-               ReferencedContainer = "container:QuickDrinksApp.xcodeproj">
+               BuildableName = "QuickRestaurantAppUITests.xctest"
+               BlueprintName = "QuickRestaurantAppUITests"
+               ReferencedContainer = "container:QuickRestaurantApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -61,9 +61,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "339F54571FAE8CB000346119"
-            BuildableName = "QuickDrinksApp.app"
-            BlueprintName = "QuickDrinksApp"
-            ReferencedContainer = "container:QuickDrinksApp.xcodeproj">
+            BuildableName = "QuickRestaurantApp.app"
+            BlueprintName = "QuickRestaurantApp"
+            ReferencedContainer = "container:QuickRestaurantApp.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -84,9 +84,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "339F54571FAE8CB000346119"
-            BuildableName = "QuickDrinksApp.app"
-            BlueprintName = "QuickDrinksApp"
-            ReferencedContainer = "container:QuickDrinksApp.xcodeproj">
+            BuildableName = "QuickRestaurantApp.app"
+            BlueprintName = "QuickRestaurantApp"
+            ReferencedContainer = "container:QuickRestaurantApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -102,9 +102,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "339F54571FAE8CB000346119"
-            BuildableName = "QuickDrinksApp.app"
-            BlueprintName = "QuickDrinksApp"
-            ReferencedContainer = "container:QuickDrinksApp.xcodeproj">
+            BuildableName = "QuickRestaurantApp.app"
+            BlueprintName = "QuickRestaurantApp"
+            ReferencedContainer = "container:QuickRestaurantApp.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
