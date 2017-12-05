@@ -18,7 +18,7 @@ class ChoreViewController: UIViewController {
     @IBOutlet weak var priceField: UITextField!
 
     @IBAction func completechore(_ sender: Any) {
-        let alert = UIAlertController(title: "Add \(self.nameField.text!) for $\(self.priceField.text!)?", message: "Confirm Menu Item", preferredStyle: .alert)
+        let alert = UIAlertController(title:"Confirm Menu Item" , message:"Add \(self.nameField.text!) for $\(self.priceField.text!)?" , preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .`default`, handler: { _ in
             //TODO: Mark chore as completed, change background color to green.
             let url = NSURL(string: "http://quickdrinks.000webhostapp.com/update_menu.php") // locahost MAMP - change to point to your database server

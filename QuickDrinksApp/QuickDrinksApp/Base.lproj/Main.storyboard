@@ -138,7 +138,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="GHb-FX-6ec"/>
                                 </constraints>
-                                <state key="normal" title="Order Now">
+                                <state key="normal" title="Add Menu Item">
                                     <color key="titleColor" red="0.96277620432353572" green="0.98562297964814438" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -273,7 +273,7 @@
                             <outlet property="delegate" destination="VAD-yh-I3Q" id="NVf-p0-psO"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Track Orders" id="PaF-wl-yaH"/>
+                    <tabBarItem key="tabBarItem" title="Complete Orders" id="PaF-wl-yaH"/>
                     <navigationItem key="navigationItem" title="Orders" id="dnu-aR-J03"/>
                     <connections>
                         <outlet property="GroupTableView" destination="yBc-ue-BZf" id="VRU-2P-FXn"/>
