@@ -1,2 +1,1 @@
-# QuickRestaurant
-Restaurant side of QuickDrinks
+# Quick-Drinks

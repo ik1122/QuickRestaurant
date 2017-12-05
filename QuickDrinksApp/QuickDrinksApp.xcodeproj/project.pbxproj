@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		336A275F1FB4188700419E0E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336A275E1FB4188700419E0E /* LoginViewController.swift */; };
+		336A277B1FB65FD900419E0E /* ToDoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336A277A1FB65FD900419E0E /* ToDoTableViewCell.swift */; };
+		336A277D1FB661EE00419E0E /* ChoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336A277C1FB661EE00419E0E /* ChoreViewController.swift */; };
+		336A277F1FB6701B00419E0E /* Chore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336A277E1FB6701B00419E0E /* Chore.swift */; };
+		339F545C1FAE8CB000346119 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339F545B1FAE8CB000346119 /* AppDelegate.swift */; };
+		339F545E1FAE8CB000346119 /* ToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339F545D1FAE8CB000346119 /* ToDoViewController.swift */; };
+		339F54601FAE8CB000346119 /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339F545F1FAE8CB000346119 /* GroupViewController.swift */; };
+		339F54631FAE8CB000346119 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 339F54611FAE8CB000346119 /* Main.storyboard */; };
+		339F54651FAE8CB000346119 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 339F54641FAE8CB000346119 /* Assets.xcassets */; };
+		339F54681FAE8CB000346119 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 339F54661FAE8CB000346119 /* LaunchScreen.storyboard */; };
+		339F54731FAE8CB100346119 /* ChOrganizeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339F54721FAE8CB100346119 /* ChOrganizeAppTests.swift */; };
+		339F547E1FAE8CB100346119 /* ChOrganizeAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339F547D1FAE8CB100346119 /* ChOrganizeAppUITests.swift */; };
+		33CB1A521FB78EA3006F941D /* chorgilogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 33CB1A511FB78EA3006F941D /* chorgilogo.png */; };
+		33CB1A541FB78EDB006F941D /* chorgibroom.png in Resources */ = {isa = PBXBuildFile; fileRef = 33CB1A531FB78EDB006F941D /* chorgibroom.png */; };
+		55902E591FD2CD2C000CEA4A /* RetaurantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55902E581FD2CD2C000CEA4A /* RetaurantsViewController.swift */; };
+		55902E5B1FD2CDAA000CEA4A /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55902E5A1FD2CDAA000CEA4A /* Restaurant.swift */; };
+		55902E5D1FD2CED1000CEA4A /* RestaurantsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55902E5C1FD2CED1000CEA4A /* RestaurantsTableViewCell.swift */; };
+		55902E691FD2E452000CEA4A /* photo5.png in Resources */ = {isa = PBXBuildFile; fileRef = 55902E681FD2E451000CEA4A /* photo5.png */; };
+		55902E6B1FD2E53F000CEA4A /* photo6.png in Resources */ = {isa = PBXBuildFile; fileRef = 55902E6A1FD2E53E000CEA4A /* photo6.png */; };
+		55902E6D1FD2E7E0000CEA4A /* drinksicon120.png in Resources */ = {isa = PBXBuildFile; fileRef = 55902E6C1FD2E7E0000CEA4A /* drinksicon120.png */; };
+		55902E751FD2FA61000CEA4A /* photo10.png in Resources */ = {isa = PBXBuildFile; fileRef = 55902E741FD2FA61000CEA4A /* photo10.png */; };
+		FF0E6D0A1FD64AF900D20CA0 /* GetOrderInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0E6D091FD64AF900D20CA0 /* GetOrderInfo.swift */; };
+		FF2E4DC01FB7C46500D3C35D /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2E4DBE1FB7C46500D3C35D /* Group.swift */; };
+		FF2E4DC11FB7C46500D3C35D /* GroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2E4DBF1FB7C46500D3C35D /* GroupTableViewCell.swift */; };
+		FF48C8EC1FB7A79E00812AE7 /* CreateChoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF48C8EB1FB7A79E00812AE7 /* CreateChoreViewController.swift */; };
+		FFEEFD6F1FD32BBB00619DCD /* GetInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEEFD6E1FD32BBB00619DCD /* GetInfo.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		339F546F1FAE8CB100346119 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 339F54501FAE8CB000346119 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 339F54571FAE8CB000346119;
+			remoteInfo = ChOrganizeApp;
+		};
+		339F547A1FAE8CB100346119 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 339F54501FAE8CB000346119 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 339F54571FAE8CB000346119;
+			remoteInfo = ChOrganizeApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		336A275E1FB4188700419E0E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		336A277A1FB65FD900419E0E /* ToDoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoTableViewCell.swift; sourceTree = "<group>"; };
+		336A277C1FB661EE00419E0E /* ChoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoreViewController.swift; sourceTree = "<group>"; };
+		336A277E1FB6701B00419E0E /* Chore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chore.swift; sourceTree = "<group>"; };
+		339F54581FAE8CB000346119 /* QuickDrinksApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickDrinksApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		339F545B1FAE8CB000346119 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		339F545D1FAE8CB000346119 /* ToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoViewController.swift; sourceTree = "<group>"; };
+		339F545F1FAE8CB000346119 /* GroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
+		339F54621FAE8CB000346119 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		339F54641FAE8CB000346119 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		339F54671FAE8CB000346119 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		339F54691FAE8CB000346119 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		339F546E1FAE8CB100346119 /* QuickDrinksAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickDrinksAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		339F54721FAE8CB100346119 /* ChOrganizeAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChOrganizeAppTests.swift; sourceTree = "<group>"; };
+		339F54741FAE8CB100346119 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		339F54791FAE8CB100346119 /* QuickDrinksAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickDrinksAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		339F547D1FAE8CB100346119 /* ChOrganizeAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChOrganizeAppUITests.swift; sourceTree = "<group>"; };
+		339F547F1FAE8CB100346119 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33CB1A511FB78EA3006F941D /* chorgilogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chorgilogo.png; path = ImageFiles/chorgilogo.png; sourceTree = SOURCE_ROOT; };
+		33CB1A531FB78EDB006F941D /* chorgibroom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chorgibroom.png; path = ImageFiles/chorgibroom.png; sourceTree = SOURCE_ROOT; };
+		55902E581FD2CD2C000CEA4A /* RetaurantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetaurantsViewController.swift; sourceTree = "<group>"; };
+		55902E5A1FD2CDAA000CEA4A /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		55902E5C1FD2CED1000CEA4A /* RestaurantsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsTableViewCell.swift; sourceTree = "<group>"; };
+		55902E681FD2E451000CEA4A /* photo5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = photo5.png; path = ImageFiles/photo5.png; sourceTree = SOURCE_ROOT; };
+		55902E6A1FD2E53E000CEA4A /* photo6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = photo6.png; path = ImageFiles/photo6.png; sourceTree = SOURCE_ROOT; };
+		55902E6C1FD2E7E0000CEA4A /* drinksicon120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = drinksicon120.png; path = Assets.xcassets/AppIcon.appiconset/drinksicon120.png; sourceTree = "<group>"; };
+		55902E741FD2FA61000CEA4A /* photo10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = photo10.png; path = ImageFiles/photo10.png; sourceTree = SOURCE_ROOT; };
+		FF0E6D091FD64AF900D20CA0 /* GetOrderInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetOrderInfo.swift; sourceTree = "<group>"; };
+		FF2E4DBE1FB7C46500D3C35D /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		FF2E4DBF1FB7C46500D3C35D /* GroupTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupTableViewCell.swift; sourceTree = "<group>"; };
+		FF48C8EB1FB7A79E00812AE7 /* CreateChoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateChoreViewController.swift; sourceTree = "<group>"; };
+		FFEEFD6E1FD32BBB00619DCD /* GetInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetInfo.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		339F54551FAE8CB000346119 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		339F546B1FAE8CB100346119 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		339F54761FAE8CB100346119 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		339F544F1FAE8CB000346119 = {
+			isa = PBXGroup;
+			children = (
+				339F545A1FAE8CB000346119 /* QuickDrinksApp */,
+				339F54711FAE8CB100346119 /* QuickDrinksAppTests */,
+				339F547C1FAE8CB100346119 /* QuickDrinksAppUITests */,
+				339F54591FAE8CB000346119 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		339F54591FAE8CB000346119 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				339F54581FAE8CB000346119 /* QuickDrinksApp.app */,
+				339F546E1FAE8CB100346119 /* QuickDrinksAppTests.xctest */,
+				339F54791FAE8CB100346119 /* QuickDrinksAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		339F545A1FAE8CB000346119 /* QuickDrinksApp */ = {
+			isa = PBXGroup;
+			children = (
+				339F545B1FAE8CB000346119 /* AppDelegate.swift */,
+				336A275E1FB4188700419E0E /* LoginViewController.swift */,
+				FF2E4DBE1FB7C46500D3C35D /* Group.swift */,
+				FF2E4DBF1FB7C46500D3C35D /* GroupTableViewCell.swift */,
+				339F545D1FAE8CB000346119 /* ToDoViewController.swift */,
+				336A277A1FB65FD900419E0E /* ToDoTableViewCell.swift */,
+				336A277C1FB661EE00419E0E /* ChoreViewController.swift */,
+				339F545F1FAE8CB000346119 /* GroupViewController.swift */,
+				339F54661FAE8CB000346119 /* LaunchScreen.storyboard */,
+				55902E6A1FD2E53E000CEA4A /* photo6.png */,
+				339F54611FAE8CB000346119 /* Main.storyboard */,
+				55902E741FD2FA61000CEA4A /* photo10.png */,
+				55902E681FD2E451000CEA4A /* photo5.png */,
+				55902E581FD2CD2C000CEA4A /* RetaurantsViewController.swift */,
+				55902E5C1FD2CED1000CEA4A /* RestaurantsTableViewCell.swift */,
+				FF48C8EB1FB7A79E00812AE7 /* CreateChoreViewController.swift */,
+				336A277E1FB6701B00419E0E /* Chore.swift */,
+				FFEEFD6E1FD32BBB00619DCD /* GetInfo.swift */,
+				FF0E6D091FD64AF900D20CA0 /* GetOrderInfo.swift */,
+				55902E5A1FD2CDAA000CEA4A /* Restaurant.swift */,
+				339F54641FAE8CB000346119 /* Assets.xcassets */,
+				55902E6C1FD2E7E0000CEA4A /* drinksicon120.png */,
+				33CB1A511FB78EA3006F941D /* chorgilogo.png */,
+				33CB1A531FB78EDB006F941D /* chorgibroom.png */,
+				339F54691FAE8CB000346119 /* Info.plist */,
+			);
+			path = QuickDrinksApp;
+			sourceTree = "<group>";
+		};
+		339F54711FAE8CB100346119 /* QuickDrinksAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				339F54721FAE8CB100346119 /* ChOrganizeAppTests.swift */,
+				339F54741FAE8CB100346119 /* Info.plist */,
+			);
+			path = QuickDrinksAppTests;
+			sourceTree = "<group>";
+		};
+		339F547C1FAE8CB100346119 /* QuickDrinksAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				339F547D1FAE8CB100346119 /* ChOrganizeAppUITests.swift */,
+				339F547F1FAE8CB100346119 /* Info.plist */,
+			);
+			path = QuickDrinksAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		339F54571FAE8CB000346119 /* QuickDrinksApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 339F54821FAE8CB100346119 /* Build configuration list for PBXNativeTarget "QuickDrinksApp" */;
+			buildPhases = (
+				339F54541FAE8CB000346119 /* Sources */,
+				339F54551FAE8CB000346119 /* Frameworks */,
+				339F54561FAE8CB000346119 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuickDrinksApp;
+			productName = ChOrganizeApp;
+			productReference = 339F54581FAE8CB000346119 /* QuickDrinksApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		339F546D1FAE8CB100346119 /* QuickDrinksAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 339F54851FAE8CB100346119 /* Build configuration list for PBXNativeTarget "QuickDrinksAppTests" */;
+			buildPhases = (
+				339F546A1FAE8CB100346119 /* Sources */,
+				339F546B1FAE8CB100346119 /* Frameworks */,
+				339F546C1FAE8CB100346119 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				339F54701FAE8CB100346119 /* PBXTargetDependency */,
+			);
+			name = QuickDrinksAppTests;
+			productName = ChOrganizeAppTests;
+			productReference = 339F546E1FAE8CB100346119 /* QuickDrinksAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		339F54781FAE8CB100346119 /* QuickDrinksAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 339F54881FAE8CB100346119 /* Build configuration list for PBXNativeTarget "QuickDrinksAppUITests" */;
+			buildPhases = (
+				339F54751FAE8CB100346119 /* Sources */,
+				339F54761FAE8CB100346119 /* Frameworks */,
+				339F54771FAE8CB100346119 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				339F547B1FAE8CB100346119 /* PBXTargetDependency */,
+			);
+			name = QuickDrinksAppUITests;
+			productName = ChOrganizeAppUITests;
+			productReference = 339F54791FAE8CB100346119 /* QuickDrinksAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		339F54501FAE8CB000346119 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = CS117;
+				TargetAttributes = {
+					339F54571FAE8CB000346119 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					339F546D1FAE8CB100346119 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 339F54571FAE8CB000346119;
+					};
+					339F54781FAE8CB100346119 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 339F54571FAE8CB000346119;
+					};
+				};
+			};
+			buildConfigurationList = 339F54531FAE8CB000346119 /* Build configuration list for PBXProject "QuickDrinksApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 339F544F1FAE8CB000346119;
+			productRefGroup = 339F54591FAE8CB000346119 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				339F54571FAE8CB000346119 /* QuickDrinksApp */,
+				339F546D1FAE8CB100346119 /* QuickDrinksAppTests */,
+				339F54781FAE8CB100346119 /* QuickDrinksAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		339F54561FAE8CB000346119 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55902E691FD2E452000CEA4A /* photo5.png in Resources */,
+				55902E6B1FD2E53F000CEA4A /* photo6.png in Resources */,
+				339F54681FAE8CB000346119 /* LaunchScreen.storyboard in Resources */,
+				33CB1A521FB78EA3006F941D /* chorgilogo.png in Resources */,
+				339F54651FAE8CB000346119 /* Assets.xcassets in Resources */,
+				339F54631FAE8CB000346119 /* Main.storyboard in Resources */,
+				55902E751FD2FA61000CEA4A /* photo10.png in Resources */,
+				33CB1A541FB78EDB006F941D /* chorgibroom.png in Resources */,
+				55902E6D1FD2E7E0000CEA4A /* drinksicon120.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		339F546C1FAE8CB100346119 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		339F54771FAE8CB100346119 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		339F54541FAE8CB000346119 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF2E4DC01FB7C46500D3C35D /* Group.swift in Sources */,
+				336A275F1FB4188700419E0E /* LoginViewController.swift in Sources */,
+				339F54601FAE8CB000346119 /* GroupViewController.swift in Sources */,
+				339F545C1FAE8CB000346119 /* AppDelegate.swift in Sources */,
+				336A277B1FB65FD900419E0E /* ToDoTableViewCell.swift in Sources */,
+				336A277F1FB6701B00419E0E /* Chore.swift in Sources */,
+				339F545E1FAE8CB000346119 /* ToDoViewController.swift in Sources */,
+				FF48C8EC1FB7A79E00812AE7 /* CreateChoreViewController.swift in Sources */,
+				55902E5B1FD2CDAA000CEA4A /* Restaurant.swift in Sources */,
+				55902E591FD2CD2C000CEA4A /* RetaurantsViewController.swift in Sources */,
+				FFEEFD6F1FD32BBB00619DCD /* GetInfo.swift in Sources */,
+				FF0E6D0A1FD64AF900D20CA0 /* GetOrderInfo.swift in Sources */,
+				336A277D1FB661EE00419E0E /* ChoreViewController.swift in Sources */,
+				55902E5D1FD2CED1000CEA4A /* RestaurantsTableViewCell.swift in Sources */,
+				FF2E4DC11FB7C46500D3C35D /* GroupTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		339F546A1FAE8CB100346119 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				339F54731FAE8CB100346119 /* ChOrganizeAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		339F54751FAE8CB100346119 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				339F547E1FAE8CB100346119 /* ChOrganizeAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		339F54701FAE8CB100346119 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 339F54571FAE8CB000346119 /* QuickDrinksApp */;
+			targetProxy = 339F546F1FAE8CB100346119 /* PBXContainerItemProxy */;
+		};
+		339F547B1FAE8CB100346119 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 339F54571FAE8CB000346119 /* QuickDrinksApp */;
+			targetProxy = 339F547A1FAE8CB100346119 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		339F54611FAE8CB000346119 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				339F54621FAE8CB000346119 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		339F54661FAE8CB000346119 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				339F54671FAE8CB000346119 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		339F54801FAE8CB100346119 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		339F54811FAE8CB100346119 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		339F54831FAE8CB100346119 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/QuickDrinksApp/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CS117.QuickDrinksApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		339F54841FAE8CB100346119 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/QuickDrinksApp/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CS117.QuickDrinksApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		339F54861FAE8CB100346119 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = QuickDrinksAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CS117.QuickDrinksAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuickDrinksApp.app/QuickDrinksApp";
+			};
+			name = Debug;
+		};
+		339F54871FAE8CB100346119 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = QuickDrinksAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CS117.QuickDrinksAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuickDrinksApp.app/QuickDrinksApp";
+			};
+			name = Release;
+		};
+		339F54891FAE8CB100346119 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = QuickDrinksAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CS117.QuickDrinksAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = QuickDrinksApp;
+			};
+			name = Debug;
+		};
+		339F548A1FAE8CB100346119 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = QuickDrinksAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CS117.QuickDrinksAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = QuickDrinksApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		339F54531FAE8CB000346119 /* Build configuration list for PBXProject "QuickDrinksApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				339F54801FAE8CB100346119 /* Debug */,
+				339F54811FAE8CB100346119 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		339F54821FAE8CB100346119 /* Build configuration list for PBXNativeTarget "QuickDrinksApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				339F54831FAE8CB100346119 /* Debug */,
+				339F54841FAE8CB100346119 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		339F54851FAE8CB100346119 /* Build configuration list for PBXNativeTarget "QuickDrinksAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				339F54861FAE8CB100346119 /* Debug */,
+				339F54871FAE8CB100346119 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		339F54881FAE8CB100346119 /* Build configuration list for PBXNativeTarget "QuickDrinksAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				339F54891FAE8CB100346119 /* Debug */,
+				339F548A1FAE8CB100346119 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 339F54501FAE8CB000346119 /* Project object */;
+}
