@@ -21,9 +21,6 @@
 		339F547E1FAE8CB100346119 /* ChOrganizeAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339F547D1FAE8CB100346119 /* ChOrganizeAppUITests.swift */; };
 		33CB1A521FB78EA3006F941D /* chorgilogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 33CB1A511FB78EA3006F941D /* chorgilogo.png */; };
 		33CB1A541FB78EDB006F941D /* chorgibroom.png in Resources */ = {isa = PBXBuildFile; fileRef = 33CB1A531FB78EDB006F941D /* chorgibroom.png */; };
-		55902E591FD2CD2C000CEA4A /* RetaurantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55902E581FD2CD2C000CEA4A /* RetaurantsViewController.swift */; };
-		55902E5B1FD2CDAA000CEA4A /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55902E5A1FD2CDAA000CEA4A /* Restaurant.swift */; };
-		55902E5D1FD2CED1000CEA4A /* RestaurantsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55902E5C1FD2CED1000CEA4A /* RestaurantsTableViewCell.swift */; };
 		55902E691FD2E452000CEA4A /* photo5.png in Resources */ = {isa = PBXBuildFile; fileRef = 55902E681FD2E451000CEA4A /* photo5.png */; };
 		55902E6B1FD2E53F000CEA4A /* photo6.png in Resources */ = {isa = PBXBuildFile; fileRef = 55902E6A1FD2E53E000CEA4A /* photo6.png */; };
 		55902E6D1FD2E7E0000CEA4A /* drinksicon120.png in Resources */ = {isa = PBXBuildFile; fileRef = 55902E6C1FD2E7E0000CEA4A /* drinksicon120.png */; };
@@ -73,9 +70,6 @@
 		339F547F1FAE8CB100346119 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33CB1A511FB78EA3006F941D /* chorgilogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chorgilogo.png; path = ImageFiles/chorgilogo.png; sourceTree = SOURCE_ROOT; };
 		33CB1A531FB78EDB006F941D /* chorgibroom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chorgibroom.png; path = ImageFiles/chorgibroom.png; sourceTree = SOURCE_ROOT; };
-		55902E581FD2CD2C000CEA4A /* RetaurantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetaurantsViewController.swift; sourceTree = "<group>"; };
-		55902E5A1FD2CDAA000CEA4A /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
-		55902E5C1FD2CED1000CEA4A /* RestaurantsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsTableViewCell.swift; sourceTree = "<group>"; };
 		55902E681FD2E451000CEA4A /* photo5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = photo5.png; path = ImageFiles/photo5.png; sourceTree = SOURCE_ROOT; };
 		55902E6A1FD2E53E000CEA4A /* photo6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = photo6.png; path = ImageFiles/photo6.png; sourceTree = SOURCE_ROOT; };
 		55902E6C1FD2E7E0000CEA4A /* drinksicon120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = drinksicon120.png; path = Assets.xcassets/AppIcon.appiconset/drinksicon120.png; sourceTree = "<group>"; };
@@ -148,13 +142,10 @@
 				339F54611FAE8CB000346119 /* Main.storyboard */,
 				55902E741FD2FA61000CEA4A /* photo10.png */,
 				55902E681FD2E451000CEA4A /* photo5.png */,
-				55902E581FD2CD2C000CEA4A /* RetaurantsViewController.swift */,
-				55902E5C1FD2CED1000CEA4A /* RestaurantsTableViewCell.swift */,
 				FF48C8EB1FB7A79E00812AE7 /* CreateChoreViewController.swift */,
 				336A277E1FB6701B00419E0E /* Chore.swift */,
 				FFEEFD6E1FD32BBB00619DCD /* GetInfo.swift */,
 				FF0E6D091FD64AF900D20CA0 /* GetOrderInfo.swift */,
-				55902E5A1FD2CDAA000CEA4A /* Restaurant.swift */,
 				339F54641FAE8CB000346119 /* Assets.xcassets */,
 				55902E6C1FD2E7E0000CEA4A /* drinksicon120.png */,
 				33CB1A511FB78EA3006F941D /* chorgilogo.png */,
@@ -330,12 +321,9 @@
 				336A277F1FB6701B00419E0E /* Chore.swift in Sources */,
 				339F545E1FAE8CB000346119 /* ToDoViewController.swift in Sources */,
 				FF48C8EC1FB7A79E00812AE7 /* CreateChoreViewController.swift in Sources */,
-				55902E5B1FD2CDAA000CEA4A /* Restaurant.swift in Sources */,
-				55902E591FD2CD2C000CEA4A /* RetaurantsViewController.swift in Sources */,
 				FFEEFD6F1FD32BBB00619DCD /* GetInfo.swift in Sources */,
 				FF0E6D0A1FD64AF900D20CA0 /* GetOrderInfo.swift in Sources */,
 				336A277D1FB661EE00419E0E /* ChoreViewController.swift in Sources */,
-				55902E5D1FD2CED1000CEA4A /* RestaurantsTableViewCell.swift in Sources */,
 				FF2E4DC11FB7C46500D3C35D /* GroupTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
