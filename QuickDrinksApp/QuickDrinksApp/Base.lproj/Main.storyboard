@@ -87,7 +87,7 @@
             </objects>
             <point key="canvasLocation" x="-2586" y="67"/>
         </scene>
-        <!--Drink Details-->
+        <!--Add Drink To Menu-->
         <scene sceneID="EGa-cn-OJY">
             <objects>
                 <viewController storyboardIdentifier="ChoreVC" id="4GJ-43-TPx" customClass="ChoreViewController" customModule="QuickRestaurantApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -99,76 +99,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yQV-9Z-oUt">
-                                <rect key="frame" x="115.5" y="72" width="89.5" height="20"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Drink Name">
-                                        <attributes>
-                                            <font key="NSFont" size="17" name=".SFNSText"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zjF-Uj-1wI">
-                                <rect key="frame" x="141" y="100" width="39" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.52513617277145386" green="0.54203450679779053" blue="0.49630057811737061" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rwt-xp-l4r">
-                                <rect key="frame" x="24" y="129" width="272" height="0.0"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8PU-ca-IMt">
-                                <rect key="frame" x="24" y="137" width="272" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="YpX-Sg-p5c"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.52485907821155708" green="0.53991256476683935" blue="0.49708307616241776" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTh-5c-HcB">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTh-5c-HcB">
                                 <rect key="frame" x="24" y="269" width="272" height="30"/>
                                 <color key="backgroundColor" red="0.52228443944436542" green="0.75174060880829019" blue="0.44404561786283003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="GHb-FX-6ec"/>
                                 </constraints>
-                                <state key="normal" title="Order Now">
+                                <state key="normal" title="Add to Menu">
                                     <color key="titleColor" red="0.96277620432353572" green="0.98562297964814438" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="completechore:" destination="4GJ-43-TPx" eventType="touchUpInside" id="Akq-Ot-xpf"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uHb-G2-72g">
+                                <rect key="frame" x="115" y="137" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Price" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3jx-Kw-8en">
+                                <rect key="frame" x="115" y="184" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="hTh-5c-HcB" firstAttribute="top" secondItem="8PU-ca-IMt" secondAttribute="bottom" constant="32" id="0HC-Kf-1vR"/>
-                            <constraint firstItem="zjF-Uj-1wI" firstAttribute="centerX" secondItem="JdO-YX-rBI" secondAttribute="centerX" id="28t-A0-Bev"/>
-                            <constraint firstItem="zjF-Uj-1wI" firstAttribute="top" secondItem="yQV-9Z-oUt" secondAttribute="bottom" constant="8" id="8tS-Jb-eA4"/>
-                            <constraint firstItem="yQV-9Z-oUt" firstAttribute="centerX" secondItem="JdO-YX-rBI" secondAttribute="centerX" id="BUn-s1-Drx"/>
-                            <constraint firstItem="Rwt-xp-l4r" firstAttribute="top" secondItem="zjF-Uj-1wI" secondAttribute="bottom" constant="8" id="Oud-Dd-si6"/>
-                            <constraint firstItem="8PU-ca-IMt" firstAttribute="top" secondItem="Rwt-xp-l4r" secondAttribute="bottom" constant="8" id="XYQ-Fx-tH3"/>
-                            <constraint firstItem="8PU-ca-IMt" firstAttribute="leading" secondItem="JdO-YX-rBI" secondAttribute="leadingMargin" constant="8" id="b81-l8-sq0"/>
-                            <constraint firstItem="yQV-9Z-oUt" firstAttribute="top" secondItem="A8s-vX-kGS" secondAttribute="bottom" constant="8" id="dpI-uz-HJL"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="8PU-ca-IMt" secondAttribute="trailing" constant="8" id="fIM-As-wA8"/>
-                            <constraint firstItem="Rwt-xp-l4r" firstAttribute="leading" secondItem="JdO-YX-rBI" secondAttribute="leadingMargin" constant="8" id="g9O-xM-N0h"/>
                             <constraint firstAttribute="trailingMargin" secondItem="hTh-5c-HcB" secondAttribute="trailing" constant="8" id="gm4-Ke-SM0"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Rwt-xp-l4r" secondAttribute="trailing" constant="8" id="qMv-lD-J0Z"/>
                             <constraint firstItem="hTh-5c-HcB" firstAttribute="leading" secondItem="JdO-YX-rBI" secondAttribute="leadingMargin" constant="8" id="xGx-xu-RBG"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Drink Details" id="Lmm-Cn-jBD"/>
+                    <navigationItem key="navigationItem" title="Add Drink To Menu" id="Lmm-Cn-jBD"/>
                     <connections>
-                        <outlet property="Drink" destination="yQV-9Z-oUt" id="IqZ-3l-wU8"/>
-                        <outlet property="descriptionlabel" destination="8PU-ca-IMt" id="dtw-5c-EwX"/>
-                        <outlet property="nameLabel" destination="yQV-9Z-oUt" id="yvK-Yd-3nX"/>
-                        <outlet property="priceLabel" destination="zjF-Uj-1wI" id="For-ns-B6O"/>
+                        <outlet property="Price" destination="3jx-Kw-8en" id="TV5-TQ-DCN"/>
+                        <outlet property="nameLabel" destination="uHb-G2-72g" id="rDA-3c-3B2"/>
+                        <outlet property="priceLabel" destination="3jx-Kw-8en" id="0F1-G0-bMZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Px-5g-hYi" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -318,7 +287,6 @@
                                     <outlet property="cell" destination="aHi-mD-r3t" id="gOH-fR-nIi"/>
                                     <outlet property="nameLabel" destination="GBx-oM-Xew" id="AIM-SJ-6Oe"/>
                                     <outlet property="priceLabel" destination="QFq-KL-J4H" id="P3g-a7-UAS"/>
-                                    <segue destination="4GJ-43-TPx" kind="show" identifier="test" id="Sp4-kj-cUT"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -329,7 +297,11 @@
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Drinks" id="x09-tg-ReV"/>
                     <navigationItem key="navigationItem" title="Drinks" id="rFW-4h-OBF">
-                        <barButtonItem key="rightBarButtonItem" title="Add" id="erg-iK-AE1"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="erg-iK-AE1">
+                            <connections>
+                                <segue destination="4GJ-43-TPx" kind="show" id="ved-ef-hUf"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="ToDoTableView" destination="yje-Px-yfL" id="5rq-b1-EfE"/>

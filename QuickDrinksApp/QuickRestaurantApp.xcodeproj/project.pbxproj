@@ -28,7 +28,6 @@
 		FF0E6D0A1FD64AF900D20CA0 /* GetOrderInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0E6D091FD64AF900D20CA0 /* GetOrderInfo.swift */; };
 		FF2E4DC01FB7C46500D3C35D /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2E4DBE1FB7C46500D3C35D /* Group.swift */; };
 		FF2E4DC11FB7C46500D3C35D /* GroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2E4DBF1FB7C46500D3C35D /* GroupTableViewCell.swift */; };
-		FF48C8EC1FB7A79E00812AE7 /* CreateChoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF48C8EB1FB7A79E00812AE7 /* CreateChoreViewController.swift */; };
 		FFEEFD6F1FD32BBB00619DCD /* GetInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEEFD6E1FD32BBB00619DCD /* GetInfo.swift */; };
 /* End PBXBuildFile section */
 
@@ -77,7 +76,6 @@
 		FF0E6D091FD64AF900D20CA0 /* GetOrderInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetOrderInfo.swift; sourceTree = "<group>"; };
 		FF2E4DBE1FB7C46500D3C35D /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		FF2E4DBF1FB7C46500D3C35D /* GroupTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupTableViewCell.swift; sourceTree = "<group>"; };
-		FF48C8EB1FB7A79E00812AE7 /* CreateChoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateChoreViewController.swift; sourceTree = "<group>"; };
 		FFEEFD6E1FD32BBB00619DCD /* GetInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,7 +140,6 @@
 				339F54611FAE8CB000346119 /* Main.storyboard */,
 				55902E741FD2FA61000CEA4A /* photo10.png */,
 				55902E681FD2E451000CEA4A /* photo5.png */,
-				FF48C8EB1FB7A79E00812AE7 /* CreateChoreViewController.swift */,
 				336A277E1FB6701B00419E0E /* Chore.swift */,
 				FFEEFD6E1FD32BBB00619DCD /* GetInfo.swift */,
 				FF0E6D091FD64AF900D20CA0 /* GetOrderInfo.swift */,
@@ -320,7 +317,6 @@
 				336A277B1FB65FD900419E0E /* ToDoTableViewCell.swift in Sources */,
 				336A277F1FB6701B00419E0E /* Chore.swift in Sources */,
 				339F545E1FAE8CB000346119 /* ToDoViewController.swift in Sources */,
-				FF48C8EC1FB7A79E00812AE7 /* CreateChoreViewController.swift in Sources */,
 				FFEEFD6F1FD32BBB00619DCD /* GetInfo.swift in Sources */,
 				FF0E6D0A1FD64AF900D20CA0 /* GetOrderInfo.swift in Sources */,
 				336A277D1FB661EE00419E0E /* ChoreViewController.swift in Sources */,

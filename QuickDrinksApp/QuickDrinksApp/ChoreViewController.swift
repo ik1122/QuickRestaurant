@@ -13,7 +13,9 @@ class ChoreViewController: UIViewController {
     var name: String = ""
     var price: String = ""
 
-    @IBOutlet weak var Drink: UILabel!
+   // @IBOutlet weak var Drink: UILabel!
+    @IBOutlet weak var nameLabel: UITextField!
+    @IBOutlet weak var priceLabel: UITextField!
 
     @IBAction func completechore(_ sender: Any) {
         let alert = UIAlertController(title: "Order now?", message: "Confirm Order", preferredStyle: .alert)
@@ -28,9 +30,9 @@ class ChoreViewController: UIViewController {
             
             // the POST string has entries separated by &
             
-            let dataString = "&drink=\(self.Drink.text!)"
+            let dataString = "&drink=\(self.nameLabel.text!), &price=\(self.priceLabel.text!)"
             //let dataString = "\(self.Drink.text!)"
-                print(self.Drink.text ?? "a")
+                print(self.nameLabel.text ?? "a")
                 print(dataString)
             // add items as name and value
             // convert the post string to utf8 format
@@ -112,10 +114,8 @@ class ChoreViewController: UIViewController {
         self.present(alert, animated: true, completion: nil)
         
     }
-        @IBOutlet weak var descriptionlabel: UILabel!
     
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var priceLabel: UILabel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -123,8 +123,7 @@ class ChoreViewController: UIViewController {
      //  descriptionlabel.layer.borderWidth = 0.5
       //  descriptionlabel.layer.cornerRadius = 8
         
-        self.nameLabel.text = name
-        self.priceLabel.text = price
+
     
     }
 
@@ -133,11 +132,5 @@ class ChoreViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    // Send data over segue to indicate came from Edit button and set the title to "Edit Chore"
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "editChore" {
-            let destVC = segue.destination as! CreateChoreViewController
-            destVC.origin = "editButton"
-        }
-    }
+   
 }
