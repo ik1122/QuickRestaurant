@@ -24,13 +24,18 @@ class GroupViewController: UIViewController, UITableViewDataSource, UITableViewD
         
         self.GroupTableView.delegate = self
         self.GroupTableView.dataSource = self
-        
+        refreshData()
         let orderInfo = OrderInfo()
         orderInfo.delegate = self
         orderInfo.downloadItems()
         
     }
-    
+    func refreshData() {
+        let orderInfo = OrderInfo()
+            orderInfo.delegate = self
+            orderInfo.downloadItems()
+        GroupTableView.reloadData()
+    }
     func itemsDownloaded(items: NSArray) {
         
         feedItems = items
@@ -100,6 +105,7 @@ class GroupViewController: UIViewController, UITableViewDataSource, UITableViewD
                                 let alert = UIAlertController(title: "Upload Didn't Work?", message: "Looks like the connection to the server didn't work.  Do you have Internet access?", preferredStyle: .alert)
                                 alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
                                 self.present(alert, animated: true, completion: nil)
+                                self.refreshData()
                         }
                     }
                     else
@@ -120,6 +126,7 @@ class GroupViewController: UIViewController, UITableViewDataSource, UITableViewD
                                         self.present(alert, animated: true, completion: nil)
                                         self.GroupTableView.reloadData()
                                         tableView.reloadData()
+                                        self.refreshData()
                                 }
                             }
                             else
@@ -129,17 +136,27 @@ class GroupViewController: UIViewController, UITableViewDataSource, UITableViewD
                                 DispatchQueue.main.async
                                     {
                                         
-                                        let alert = UIAlertController(title: "Upload Didn't Work", message: "Looks like the insert into the database did not worked.", preferredStyle: .alert)
+                                        let alert = UIAlertController(title: "Drink is Complete", message: "Customer has been notified.", preferredStyle: .alert)
                                         alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
                                         self.present(alert, animated: true, completion: nil)
                                         self.GroupTableView.reloadData()
                                         tableView.reloadData()
+                                        //self.refreshData()
+                                        DispatchQueue.main.async() {
+                                            self.refreshData()
+                                        }
                                 }
                             }
                         }
                     }
                 }
                 uploadJob.resume()
+//                        let cell = tableView.dequeueReusableCell(withIdentifier: "GroupTableViewCell", for: indexPath) as? GroupTableViewCell
+//                 let item: Group = feedItems[indexPath.row] as! Group
+//            item.status = "Ready"
+//                
+//                cell!.nameLabel.text = "Ready"
+                refreshData()
             }
 //        tableView.reloadData()
 //             tableView.selectRow(at: indexPath, animated: false, scrollPosition: .none)
@@ -148,6 +165,7 @@ class GroupViewController: UIViewController, UITableViewDataSource, UITableViewD
            // }
             
             //tableView.itemsDownloaded(feedItems)
+            refreshData()
 
         }
     
